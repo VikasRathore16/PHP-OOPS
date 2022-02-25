@@ -4,12 +4,10 @@ use App\Footer;
 use App\Header;
 
 require_once "vendor/autoload.php";
-
 $header = new Header();
 $footer = new Footer();
-
-
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,8 +20,9 @@ $footer = new Footer();
 
 <body>
 	<!-- including header file -->
-	<?php echo $header->header();?>
+	<?php echo $header->header(); ?>
 	<div id="main">
+
 		<div id="contact-form">
 			<form action="" method="">
 				<label for="name">Name:</label>
@@ -40,7 +39,7 @@ $footer = new Footer();
 
 	</div>
 	<!-- including footer file -->
-	<?php echo $footer->footer();?>
+	<?php echo $footer->footer(); ?>
 </body>
 
 </html>

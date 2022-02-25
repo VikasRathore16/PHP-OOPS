@@ -1,5 +1,4 @@
 <?php
-//common variable and contant file
 error_reporting(E_ALL ^ E_NOTICE);  
 session_start();
 // Products array for fetching each product.
@@ -9,7 +8,3 @@ $Products = array(
     array("id"=>103,"name"=>"Soccer","image"=>"soccer.png","price"=>110),
     array("id"=>104,"name"=>"Table Tennis","image"=>"table-tennis.png","price"=>130),
     array("id"=>105,"name"=>"Tennis","image"=>"tennis.png","price"=>100));
-
-
-
-?>

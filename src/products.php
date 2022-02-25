@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+
 use App\Cart;
 use App\Footer;
 use App\Header;
@@ -26,26 +27,27 @@ session_start();
 
 <body>
 	<!-- including header file -->
-	<?php echo $header->header();?>
+	<?php echo $header->header(); ?>
 	<div id="main">
 		<!-- Calling displayproduct function for displaying all products -->
 		<div id='products'>
-        <?php
-        foreach($Products as $arr=>$product){
-            $product1 = new Product($product["id"],$product["name"],$product["image"],$product["price"]);
-            echo $product1->getProducts();
-        } 
-       ?>
-       </div>
-	
+			<?php
+			foreach ($Products as $arr => $product) {
+				$product1 = new Product($product["id"], $product["name"], $product["image"], $product["price"]);
+				echo $product1->getProducts();
+			}
+			?>
+		</div>
+
 		<div id="table">
-        <?php $cart= new Cart();
-        $carrt = $_SESSION['cartItems'];
-        $cart->setCart($carrt);
-        $cart->displayCart();?>
+			<?php $cart = new Cart();
+			$carrt = $_SESSION['cartItems'];
+			$cart->setCart($carrt);
+			$cart->displayCart(); ?>
 		</div>
 	</div>
-		<!-- including footer file -->
-	<?php echo $footer->footer();?>
+	<!-- including footer file -->
+	<?php echo $footer->footer(); ?>
 </body>
+
 </html>

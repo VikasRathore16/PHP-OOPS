@@ -1,10 +1,20 @@
 <?php
+
 namespace App;
 
+/**
+ * Header class
+ */
 class Header
 {
-   public function header(){
-       return "<div id='header'>
+    /**
+     * header function
+     *Displaying header
+     * @return void
+     */
+    public function header()
+    {
+        return "<div id='header'>
        <h1 id='logo'>Logo</h1>
        <nav>
            <ul id='menu'>
@@ -15,6 +25,5 @@ class Header
            </ul>
        </nav>
    </div>";
-   }
-    
+    }
 }

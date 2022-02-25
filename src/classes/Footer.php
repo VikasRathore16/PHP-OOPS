@@ -1,10 +1,20 @@
 <?php
+
 namespace App;
 
+/**
+ * Footer class
+ */
 class Footer
 {
-   public function Footer(){
-       return "<div id='footer'>
+    /**
+     * Footer function
+     *Displaying Footer
+     * @return void
+     */
+    public function footer()
+    {
+        return "<div id='footer'>
        <nav>
            <ul id='footer-links'>
                <li><a href='#'>Privacy</a></li>
@@ -12,6 +22,5 @@ class Footer
            </ul>
        </nav>
    </div>";
-   }
-    
+    }
 }
