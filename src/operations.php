@@ -1,6 +1,7 @@
 <?php
-require('classes/Cart.php');
-require('classes/Product.php');
+use App\Cart;
+use App\Product;
+require_once "vendor/autoload.php";;
 require('config.php');
 session_start();
 

@@ -1,10 +1,16 @@
 <?php
-include('classes/Header.php');
-include('classes/Footer.php');
+
+use App\Footer;
+use App\Header;
+
+require_once "vendor/autoload.php";
+
 $header = new Header();
 $footer = new Footer();
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
 

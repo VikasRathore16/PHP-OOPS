@@ -1,5 +1,5 @@
 <?php
-// namespace cat;
+namespace App;
 
 class Footer
 {

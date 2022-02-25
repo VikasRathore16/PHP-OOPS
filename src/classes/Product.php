@@ -1,7 +1,6 @@
 <?php 
-/**
- * Product class 
- */
+
+namespace App;
 
 class Product{
     public int $id;

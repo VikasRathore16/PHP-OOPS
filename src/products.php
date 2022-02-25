@@ -1,8 +1,12 @@
 <?php
-include('classes/Header.php');
-include('classes/Footer.php');
-require('classes/Cart.php');
-require('classes/Product.php');
+error_reporting(0);
+use App\Cart;
+use App\Footer;
+use App\Header;
+use App\Product;
+
+require_once "vendor/autoload.php";
+
 require('config.php');
 $header = new Header();
 $footer = new Footer();

@@ -1,9 +1,7 @@
 <?php
 
-/**
- * Product class 
- */
-
+namespace App;
+error_reporting(0);
 class Cart
 {
 
